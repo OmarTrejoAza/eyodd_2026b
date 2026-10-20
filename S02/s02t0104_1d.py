@@ -16,10 +16,9 @@ print_array (my_array)
 
 #Si ay un errir
 try:
-    Print("--- DESPUES DE LA ELIMINACION ---")
+    print("--- DESPUES DE LA ELIMINACION ---")
     my_array.remove(100)
 except:
     print("No se encuentra en el arreglo")
 print_array(my_array)
-
 

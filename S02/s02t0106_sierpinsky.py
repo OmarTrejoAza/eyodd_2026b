@@ -30,7 +30,7 @@ def generate_triangle(rows = 1):
         matrix.append(new_row) 
     # Calculando el centro de la primera fila 
     center = columns // 2 # se hace division entera 
-     
+
     # Estableciendo el centro en 1 
     matrix[0][center] = 1 
 
@@ -40,18 +40,18 @@ def generate_triangle(rows = 1):
         for col in range(0, columns): 
             left_upper_cell = 0 
             right_upper_cell = 0 
-         
+
             # Si la columna donde estamos 
             # es mayor a cero, es decir, esta un elemento 
             # despues del borde izquierdo 
             if col > 0: 
                 left_upper_cell = matrix[row-1][col-1] 
-         
+
             # Si la columna esta un elemento antes 
             # del borde derecho 
             if col < columns - 1: 
                 right_upper_cell = matrix[row-1][col+1] 
-         
+
             # Asigno valor al arreglo 
             if left_upper_cell != right_upper_cell: 
                 matrix[row][col] = 1 
@@ -74,7 +74,7 @@ def draw_matrix(input_matrix, symbol="*"):
 # Metodo principal 
 def main(): 
     # Genera el triangulo de Sierpinski (puedes cambiar el 5 por 15 o mas)
-    matrix = generate_triangle(100) 
+    matrix = generate_triangle(50) 
     # Limpia la pantalla antes de dibujar la matriz 
     clear_screen() 
     # Dibuja la matriz en pantalla 

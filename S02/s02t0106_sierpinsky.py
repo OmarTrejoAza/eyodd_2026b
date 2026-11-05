@@ -74,7 +74,7 @@ def draw_matrix(input_matrix, symbol="*"):
 # Metodo principal 
 def main(): 
     # Genera el triangulo de Sierpinski (puedes cambiar el 5 por 15 o mas)
-    matrix = generate_triangle(50) 
+    matrix = generate_triangle(20) 
     # Limpia la pantalla antes de dibujar la matriz 
     clear_screen() 
     # Dibuja la matriz en pantalla 
